@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: Arial;
+    background-color: grey;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    display: grid;
+    gap: 16px;
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px white;
+    border: 1px solid #ddd;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 4px;
+    max-width: 50%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px  5px;
+    font-size: 20px;
+}
+
+.card p {
+    color: red;
+    margin: 0;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modal-content {
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 500px;
+    padding: 20px;
+    width: 80%;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    font-size: 40px;
+    right: 20px;
+    color: red;
+    top: 20px;
+}
